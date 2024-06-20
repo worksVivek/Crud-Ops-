@@ -12,8 +12,8 @@ app.get('/',(req,res)=>{
     res.render("index");
 })
 app.get('/read',(req,res)=>{
-    let allUsers = userModel.find();
-    res.render("read",{users: allUsers});
+    let users = userModel.find();
+    res.render("read",{users});
     
 })
 app.post('/create',async (req,res)=>{
