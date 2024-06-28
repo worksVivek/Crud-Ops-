@@ -8,7 +8,8 @@ app.set("view engine","ejs");
 app.use(express.json());
 app.use(express.urlencoded({extended : true}));
 app.use(express.static(path.join(__dirname,'public')));
-// github tutorial
+// github tutorial by vivek
+// with vinay and suraj
 app.get('/',(req,res)=>{
     res.render("index");
 });
